@@ -1,0 +1,79 @@
+<html>
+
+<head>
+
+<title>Assignment 1</title>
+
+<script>
+
+
+
+
+var car={
+
+name: ['Sports car', 'Benz Car', 'Land Rover'],
+
+brand: ['Ferrari', 'Mercedes', 'TATA'],
+
+colour: ['Red', 'Black', 'Blue'],
+
+mileage: ['5 kmpl', '7 kmpl', '10kmpl'],
+
+topSpeed: ['250kmph', '200kmph', '180kmph'],
+
+type: ['Petrol','Petrol','Diesel']
+
+ 
+
+};
+
+function details(){
+
+var op1;
+
+var op=document.getElementById("car").value;
+
+//op1=document.f1.sel.value();
+
+if (op=="Sports")
+
+document.write('Name: '+' '+car.name[0]+'   '+'Brand: '+ ' '+car.brand[0]+'   '+'Colour: '+' '+car.colour[0]+'   '+'Mileage: '+' '+car.mileage[0]+'   '+'Top Speed: '+' '+car.topSpeed[0]+'   '+'Type: '+' '+car.type[0]);
+
+if (op=="Benz")
+
+document.write('Name: '+' '+car.name[1]+'   '+'Brand: '+ ' '+car.brand[1]+'   '+'Colour: '+' '+car.colour[1]+'   '+'Mileage: '+' '+car.mileage[1]+'   '+'Top Speed: '+' '+car.topSpeed[1]+'   '+'Type: '+' '+car.type[1]);
+
+if (op=="Land")
+
+document.write('Name: '+' '+car.name[2]+'   '+'Brand: '+ ' '+car.brand[2]+'   '+'Colour: '+' '+car.colour[2]+'   '+'Mileage: '+' '+car.mileage[2]+'   '+'Top Speed: '+' '+car.topSpeed[2]+'   '+'Type: '+' '+car.type[2]);
+
+}
+
+
+
+
+</script>
+
+</head>
+
+<body>
+
+<form name="f1">
+
+Select Car:<select id="car" name="sel" onchange="details()">
+
+<option></option>
+
+<option value="Sports">Sports Car</option>
+
+<option value="Benz">Benz Car</option>
+
+<option value="Land">Land Rover</option>
+
+</select>
+
+</form>
+
+</body>
+
+</html>

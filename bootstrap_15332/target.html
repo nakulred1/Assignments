@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Product name:<select id="pro" name="pname" onchange="price()">
+ <option></option>
+  <option value="200">a</option>
+  <option value="300">b</option>
+  <option value="400">c</option>
+  <option value="500">d</option>
+</select><br>
+Price:
+  <input type="text" id="pri" name="pr" value="" maxlength="10"><br>
+Number of products:
+<input type="number" id="nop" name="nop" maxlength="10"><br>
+ Total Price:<input id="tpi"type="text" name="tpri" onclick="calculate()"><br>
+
+  
+</body>
+<script>
+function price()
+{
+ var x=document.getElementById("pro").value;
+   document.getElementById("pri").value = x;
+ }  
+ function calculate()
+ {
+ var y=document.getElementById("nop").value;
+ var z=document.getElementById("pri").value;
+ document.getElementById("tpi").value=y*z;
+ 
+ }
+</script>
+</html>
