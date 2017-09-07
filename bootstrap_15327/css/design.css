@@ -1,0 +1,8 @@
+.bg-cover{
+	background: url(scenery.jpg);
+	height: 300px;
+	background-size: cover;
+}
+.mysidebar{
+	margin-top: 20px;
+}
