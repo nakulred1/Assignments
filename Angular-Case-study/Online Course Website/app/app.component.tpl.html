@@ -1,0 +1,13 @@
+<center><h1 style = "color:#FFFFFF"><b>WELCOME TO SONATA ACADEMY</b></h1></center>
+<hr>
+<div class="container">                                         
+	<div class="dropdown">
+		  <button class="btn btn-success btn-block btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Choose the course  <span class="caret"></span></button>
+			  <ul class="dropdown-menu">
+			  <li><a [routerLink]="['DEVELOPER']">Developer Courses</a></li>
+			  <li><a [routerLink]="['DESIGNER']">Designer Courses</a></li>
+			  <li><a [routerLink]="['FITNESS']">Fitness Courses</a></li>
+			 </ul>
+	</div>
+	<router-outlet></router-outlet>
+</div>

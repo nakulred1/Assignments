@@ -1,0 +1,21 @@
+
+
+<div class="container-fluid">
+<nav class="navbar navbar-inverse">	
+
+		<ul class="nav navbar-nav">
+		    <li class="active"><a [routerLink]="['HOME']" >Home</a></li>
+			<li><a [routerLink]="['SCHOOL']">VEG PIZZA</a></li>
+			<li><a [routerLink]="['STUDENT']">NON-VEG PIZZA</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+        <li><a [routerLink]="['CART']">CART<span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+      </ul>
+
+</nav>
+</div>
+<hr>
+<div>
+    <!--main content-->
+    <router-outlet></router-outlet>
+</div>

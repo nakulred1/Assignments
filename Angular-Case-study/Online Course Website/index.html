@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="/">
+
+    <title>Case study</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+    <link rel="stylesheet" href="style.css">
+    <script src="https://rawgithub.com/systemjs/systemjs/0.19.6/dist/system.js"></script>
+    <script src="https://code.angularjs.org/tools/typescript.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.0/angular2-polyfills.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.0/Rx.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.0/angular2.dev.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.0/router.dev.js"></script>    
+    <script>
+        System.config({
+            transpiler: 'typescript',
+            typescriptOptions: {
+                emitDecoratorMetadata: true
+            },
+            packages: {
+                'app': {
+                    defaultExtension: 'js'
+                }
+            }
+        });
+
+    </script>
+
+    <script>
+        System.import('app/boot');
+
+    </script>
+</head>
+
+<body>
+   <base href="/">
+    <routing-example>Loading...</routing-example>
+    <footer class="container-fluid text-center fixed-bottom">
+        <h5><a href="http://www.sonata-software.com/">© SONATA SOFTWARE</a></h5>  
+        </form>
+      </footer>
+</body>
+
+</html>
